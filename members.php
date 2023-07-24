@@ -341,7 +341,7 @@ $unique_id = $_SESSION['unique_id'];
                           </div>
                           <div class="modal-body">
                             <div class="card-body">
-                              <p class="error__message text-center bg-danger text-white my-2"></p>
+                              <p class="error__message text-center bg-danger text-white my-2 d-none"></p>
                               <div class="input-group mb-3">
                                 <div class="input-group-prepend">
                                   <span class="input-group-text" id="basic-addon3">Fee Month</span>

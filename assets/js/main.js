@@ -186,8 +186,11 @@ $(document).ready(function () {
           if (response == "Success") {
             location.href = url + "/members.php";
           } else {
+            $(".error__message").removeClass("d-none");
             $(".error__message").html(response);
-            console.log(response);
+            setTimeout(function () {
+              $(".error__message").addClass("d-none");
+            }, 2000);
           }
         },
         error: function (XMLHTTPRequest) {
@@ -207,7 +210,11 @@ $(document).ready(function () {
           if (response == "Success") {
             location.href = url + "/members.php";
           } else {
+            $(".error__message").removeClass("d-none");
             $(".error__message").html(response);
+            setTimeout(function () {
+              $(".error__message").addClass("d-none");
+            }, 2000);
           }
         },
         error: function (XMLHTTPRequest) {
@@ -286,7 +293,6 @@ $(document).ready(function () {
               setTimeout(function () {
                 $(".error__message").addClass("d-none");
               }, 2000);
-              comsole.log(response);
             }
           },
           error: function (XMLHTTPRequest) {
