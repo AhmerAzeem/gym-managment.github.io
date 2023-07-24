@@ -281,11 +281,11 @@ $(document).ready(function () {
             if (response == "Success") {
               location.href = url + "/members.php";
             } else {
-              // $(".error__message").removeClass("d-none");
-              // $(".error__message").html(response);
-              // setTimeout(function () {
-              // $(".error__message").addClass("d-none");
-              // }, 2000);
+              $(".error__message").removeClass("d-none");
+              $(".error__message").html(response);
+              setTimeout(function () {
+                $(".error__message").addClass("d-none");
+              }, 2000);
               comsole.log(response);
             }
           },
